@@ -47,8 +47,6 @@ img {
     margin: 0 auto;
     padding: 0 16px;
 
-    /* width: 1158px;
-    padding: 0 15px; */
     outline: 2px solid red;
 }
 /* Tablet screen */
@@ -86,6 +84,7 @@ img {
 .header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid var(--primary-whiteborder-color);
+    min-width: 396px;
 }
 
 .header-container {
