@@ -234,6 +234,7 @@ font-style: normal;
 }
 
 .hero {
+  color: red;
     max-width: 428px;
     margin: 0 auto;
     background-repeat: no-repeat;
