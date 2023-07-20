@@ -217,12 +217,17 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .address-mail {
-font-size: 16px;
+font-size: 12px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--brand-color);
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 font-style: normal;
+}
+@media only screen and (min-width: 1158px) {
+  .address-mail {
+    font-size: 16px;
+  }
 }
 .address-mail:hover,
 .address-mail:focus {
@@ -254,6 +259,7 @@ font-style: normal;
 @media only screen and (min-width: 429px) {
    .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet@1x.jpg);
+    max-width: 768px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
@@ -265,6 +271,7 @@ font-style: normal;
 @media only screen and (min-width: 769px) {
   .hero {
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desc@1x.jpg);
+   max-width: 1440px;
  }
  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -273,14 +280,9 @@ font-style: normal;
  }
 }
 }
-@media only screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-  }
-}
+
 @media only screen and (min-width: 1158px) {
   .hero {
-    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -609,7 +611,7 @@ color: var(--brand-color);
 
 /* Clients */
 .clients-section {
-    padding-top: 96x;
+    padding-top: 96px;
     padding-bottom: 96px;
 }
 @media only screen and (min-width: 1158px) {
@@ -1556,6 +1558,9 @@ letter-spacing: 0.72px;
 
 color: var(--primary-navyblue-color);
   }
+  .mobile-first-link.actived {
+    color: var(--primary-ocean-color)
+}
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
   }
